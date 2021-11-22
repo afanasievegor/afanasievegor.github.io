@@ -23,7 +23,7 @@
 @main2: #AD6800;
 
 .horisontal() {
-	background: linear-gradient(90deg, @main1 25%, @main2 98%);
+	background: linear-gradient(90deg, @main1, @main2);
 }
 .vertical() {
 	background: linear-gradient(180deg, @main1 20%, @main2 90%);
@@ -64,7 +64,7 @@ span {
 .header {
 	height: 5rem;
 	.horisontal();
-	margin-bottom: 2rem;
+	margin-bottom: 1.4rem;
 }
 
 .group {
@@ -75,7 +75,7 @@ span {
 	&__name {
 		display: table-cell;
 		vertical-align: middle;
-		font-size: 1.4rem;
+		font-size: 1.8rem;
 	}
 }
 
@@ -98,7 +98,7 @@ span {
 /*Buttons*/
 .buttons{
 	text-align: center;
-	margin-bottom: 3rem;
+	margin-bottom: 2rem;
 }/*Buttons*/
 
 
@@ -138,5 +138,44 @@ span {
 
 .time {
 	text-align: right;
-}
+}/*Main*/
 
+
+/*Navigation*/
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 1.2rem;
+	text-align: center;
+	&-btn {
+		margin-right: 1.5rem;
+		background: @dark-bg;
+		&-last {
+			margin-right: 0;
+		}
+	}
+	&__txt {
+		margin-bottom: 0;
+		font-size: 1rem;
+	}
+}
+.circle {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 1px @text solid;
+	position: relative;
+	&__in {
+		width: 14px;
+		height: 14px;
+		border-radius: 50%;
+		position: absolute;
+		margin: 2px;
+		&-active {
+			background: @main1;
+		}
+	}
+}
