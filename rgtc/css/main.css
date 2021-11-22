@@ -95,7 +95,8 @@ span {
 }
 .stripe__low {
   font-family: 'Nunito-italic';
-  font-size: 1rem;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
 }
 .stripe__first {
   border-radius: 20px 20px 0 0;
@@ -137,19 +138,21 @@ span {
   font-size: 1rem;
 }
 .circle {
-  width: 20px;
-  height: 20px;
+  box-sizing: border-box;
+  width: 26px;
+  height: 26px;
   border-radius: 50%;
   border: 1px #ffffff solid;
   position: relative;
 }
 .circle__in {
-  width: 14px;
-  height: 14px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   position: absolute;
-  margin: 2px;
+  margin: 3px;
 }
 .circle__in-active {
   background: #f39200;
+  border: 1px #f39200 solid;
 }

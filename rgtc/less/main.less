@@ -116,7 +116,8 @@ span {
 	}
 	&__low {
 		font-family: 'Nunito-italic';
-		font-size: 1rem;
+		font-size: 0.8rem;
+		margin-top: 0.5rem;
 	}
 }
 
@@ -163,19 +164,22 @@ span {
 	}
 }
 .circle {
-	width: 20px;
-	height: 20px;
+	box-sizing: border-box;
+	width: 26px;
+	height: 26px;
 	border-radius: 50%;
 	border: 1px @text solid;
 	position: relative;
 	&__in {
-		width: 14px;
-		height: 14px;
+		width: 18px;
+		height: 18px;
 		border-radius: 50%;
 		position: absolute;
-		margin: 2px;
+		margin: 3px;
+		
 		&-active {
 			background: @main1;
+			border: 1px @main1 solid;
 		}
 	}
 }
