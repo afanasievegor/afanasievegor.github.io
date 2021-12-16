@@ -1,0 +1,113 @@
+/*Шрифты*/
+@font-face {
+  font-family: 'SourceSans3-VariableFont_wght';
+  src: url("../fonts/SourceSans3-VariableFont_wght.woff2"), url("../fonts/SourceSans3-VariableFont_wght.woff");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SourceSans3-Italic-VariableFont_wght';
+  src: url("../fonts/SourceSans3-Italic-VariableFont_wght.woff2"), url("../fonts/SourceSans3-Italic-VariableFont_wght.woff");
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+/*Цвета*/
+/*Basic settings*/
+html {
+  font-size: 10px;
+}
+body {
+  font-family: 'SourceSans3-VariableFont_wght';
+  background: url(../img/main-bg2.png) center;
+  color: #f4fffd;
+}
+button {
+  padding: 1em 2em;
+  border-radius: 8px;
+  font-size: 1.2em;
+  background-color: #4f7cac;
+  color: #f4fffd;
+  width: 12em;
+  text-transform: uppercase;
+  border: none;
+  transition: all 0.2s;
+}
+button:hover {
+  cursor: pointer;
+  background-color: #375678;
+}
+.all {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header {
+  display: flex;
+  height: 6em;
+  background: linear-gradient(90deg, #81a1c5, #4f7cac, #81a1c5);
+  justify-content: space-between;
+  margin-bottom: 1.2em;
+}
+.group {
+  align-self: center;
+  margin: -1em 0 1em 1em;
+  text-align: center;
+  height: 6em;
+  box-sizing: border-box;
+}
+.group__name {
+  font-size: 2.5em;
+  margin-bottom: -1em;
+}
+.week {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 1em;
+  font-family: 'SourceSans3-Italic-VariableFont_wght';
+}
+.week__day {
+  margin-top: 0.5em;
+  font-size: 1.4em;
+}
+.week__num {
+  margin-bottom: 0.5em;
+  font-size: 1.4em;
+}
+.buttons {
+  width: 100%;
+  display: flex;
+}
+.buttons__group,
+.buttons__week {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+.even,
+.first-group {
+  margin-right: 1em;
+}
+@media (max-width: 850px) {
+  .week__day,
+  .week__num {
+    font-size: 1.2em;
+  }
+  button {
+    font-size: 1em;
+  }
+}
+@media (max-width: 650px) {
+  .buttons__week,
+  .buttons__group {
+    flex-direction: column;
+  }
+  .even,
+  .not-even,
+  .second-group,
+  .first-group {
+    margin: 0 auto 1em;
+  }
+}
